@@ -4,25 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Contact - Card</title>
 </head>
 
 <body>
     <div class="form-container">
-        <form>
+        <form id="myform">
             <h2>Contact Us</h2>
             <label for="name">Name:</label>
-            <input type="text" id="name" value="name" required />
+            <input type="text" id="name"  placeholder="John Smith" />
 
             <label for="email">Email:</label>
-            <input type="email" id="email" value="email" required />
+            <input type="email" id="email" placeholder="john@gmail.com" required />
 
             <label for="textarea">Message:</label>
-            <input type="textarea" id="textarea" value="textarea" required />
-            
-            <input type="Submit">
+            <textarea name="" id="textarea" cols="20" rows="7" placeholder="it was an amazing..."></textarea>
+
+            <input type="Submit" >
         </form>
     </div>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
